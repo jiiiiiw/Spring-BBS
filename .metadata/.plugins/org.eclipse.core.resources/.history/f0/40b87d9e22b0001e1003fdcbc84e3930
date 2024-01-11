@@ -29,8 +29,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav me-auto">
 					<li class="nav-item"><a class="nav-link" href="#">마이페이지</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">전술 틀
-							등록하기</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">전술 틀 등록하기</a></li>
 				</ul>
 			</div>
 
@@ -39,37 +38,15 @@
 					id="dropdownMenuButton" data-bs-toggle="dropdown"
 					aria-haspopup="true" aria-expanded="false">접속하기</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-					<a class="active dropdown-item" href="#">메뉴 항목 1</a> <a
-						class="dropdown-item" href="#">메뉴 항목 2</a>
-					<!-- 원하는 만큼 드롭다운 메뉴 항목 추가 -->
+					<ul class="dropdown-menu">
+						<li class="active"> <a class="dropdown-item" href="login.jsp">로그인</a> </li>
+						<li> <a class="dropdown-item" href="join.jsp">회원가입</a> </li>
+					</ul>
 				</div>
 			</div>
+
 		</div>
 	</nav>
-	<div class="container mt-3">
-		<div class="row justify-content-center">
-			<div class="col-lg-6">
-				<div class="jumbotron" style="padding-top: 20px;">
-					<form method="post" action="loginAction.jsp">
-						<h3 style="text-align: center;">로그인화면</h3>
-						<div class="form group">
-							<input type="text" class="form-control" placeholder="아이디"
-								name="userID" maxlength="20">
-						</div>
-						<div class="form group">
-							<input type="password" class="form-control" placeholder="비밀번호"
-								name="userPassword" maxlength="20">
-						</div>
-						<input type="submit" class="btn btn-primary form-control"
-							value="로그인">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 
 
 </body>

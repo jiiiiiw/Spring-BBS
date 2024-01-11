@@ -4,58 +4,73 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<!-- 반응형 -->
 <meta name="viewport" content="width=device-width" , initial-scale="1">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<!-- 정적 부트스트랩 참조 -->
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <link href="css/bootstrap.css" rel="stylesheet">
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
-	<nav class="navbar bg-body-tertiary fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">방구석 퍼거슨</a>
+			<a class="navbar-brand" href="main.jsp">방구석 퍼거슨</a>
+
+			<!-- 토글 버튼 -->
 			<button class="navbar-toggler" type="button"
-				data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="offcanvas offcanvas-end" tabindex="-1"
-				id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">세부메뉴</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-						aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#">나만의 팀 만들기</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">전술 등록하기</a></li>
 
+			<!-- Navbar 링크 및 폼 -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item"><a class="nav-link" href="#">마이페이지</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">전술 틀
+							등록하기</a></li>
+				</ul>
+			</div>
 
-						<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle" href="#" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false"> 마이페이지 </a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">내가 만든 전술 확인하기</a></li>
-								<li><a class="dropdown-item" href="#">가입된 팀 목록 확인하기</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="#">개인 회원정보</a></li>
-							</ul></li>
-					</ul>
-					<form class="d-flex mt-3" role="search">
-						<input class="form-control me-2" type="search"
-							placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button"
+					id="dropdownMenuButton" data-bs-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">접속하기</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+					<a class="active dropdown-item" href="#">메뉴 항목 1</a> <a
+						class="dropdown-item" href="#">메뉴 항목 2</a>
+					<!-- 원하는 만큼 드롭다운 메뉴 항목 추가 -->
 				</div>
 			</div>
 		</div>
 	</nav>
-	
+	<div class="container mt-3">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="jumbotron" style="padding-top: 20px;">
+					<form method="post" action="loginAction.jsp">
+						<h3 style="text-align: center;">로그인화면</h3>
+						<div class="form group">
+							<input type="text" class="form-control" placeholder="아이디"
+								name="userID" maxlength="20">
+						</div>
+						<div class="form group">
+							<input type="password" class="form-control" placeholder="비밀번호"
+								name="userPassword" maxlength="20">
+						</div>
+						<input type="submit" class="btn btn-primary form-control"
+							value="로그인">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 
 </body>
 </html>
