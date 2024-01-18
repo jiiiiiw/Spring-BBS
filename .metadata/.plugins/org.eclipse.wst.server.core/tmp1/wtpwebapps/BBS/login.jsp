@@ -40,8 +40,8 @@
 					aria-haspopup="true" aria-expanded="false">접속하기</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-					<a class="active dropdown-item" href="#">메뉴 항목 1</a> <a
-						class="dropdown-item" href="#">메뉴 항목 2</a>
+					<a class="active dropdown-item" href="login.jsp">로그인</a> <a
+						class="dropdown-item" href="join.jsp">회원가입</a>
 					<!-- 원하는 만큼 드롭다운 메뉴 항목 추가 -->
 				</div>
 			</div>
