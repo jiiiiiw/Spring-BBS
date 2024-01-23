@@ -1,5 +1,7 @@
 package user;
 
+// JavaBeans
+
 public class User {
 	
 	private String userID;
