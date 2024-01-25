@@ -28,6 +28,7 @@
 			<!-- Navbar 링크 및 폼 -->
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav me-auto">
+					<li class="nav-item"><a class="nav-link" href="main.jsp">메인</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">마이페이지</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">전술 틀
 							등록하기</a></li>
