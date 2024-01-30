@@ -75,25 +75,11 @@
 			%>
 		</div>
 	</nav>
-	
-	<style>
-    /* 우측 하단에 버튼 고정 스타일 */
-    .fixed-bottom-right {
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-    }
 
-    /* 작은 버튼 스타일 */
-    .small-btn {
-      padding: 6px 12px;
-      font-size: 12px;
-    }
-  </style>
-	
-	<div class="container">
+	<div class="container mt-4">
 		<div class="row">
-			<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
+			<table class="table table-striped"
+				style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>
 						<th style="background-color: #eeeeee; text-align: center;">번호</th>
@@ -111,10 +97,13 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="write.jsp" class="btn btn-primary fixed-bottom-right small-btn">글쓰기</a>
+			<div class="d-flex justify-content-end">
+				<a href="write.jsp" class="btn btn-lg btn-primary"
+					style="width: 150px;">글쓰기</a>
+			</div>
 		</div>
 	</div>
-	
+
 
 </body>
 </html>
